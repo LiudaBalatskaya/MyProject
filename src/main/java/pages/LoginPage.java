@@ -145,7 +145,7 @@ public class LoginPage extends PageBase {
         driver.findElement(BUTTON_DELETE).click();
 
         driver.findElement(BLOCK).click();
-        new WebDriverWait(driver, 40).until(ExpectedConditions.visibilityOfElementLocated(MORE));
+        new WebDriverWait(driver, 30).until(ExpectedConditions.visibilityOfElementLocated(MORE));
         driver.findElement(MORE).click();
         new WebDriverWait(driver, 30).until(ExpectedConditions.visibilityOfElementLocated(TRASH));
         driver.findElement(TRASH).click();

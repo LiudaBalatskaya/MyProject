@@ -8,6 +8,7 @@ import pages.LoginPage;
 /**
  * Created by student on 2/4/2015.
  */
+
 public class LoginTest extends TestBase {
 
     private static String FULL_USER1 = "seleniumtests10@gmail.com";

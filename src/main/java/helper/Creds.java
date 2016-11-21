@@ -1,7 +1,5 @@
 package helper;
 
-import jdk.internal.org.xml.sax.Locator;
-
 import java.io.InputStream;
 import java.util.Properties;
 
@@ -13,7 +11,7 @@ public class Creds {
 
     static {
         creds = new Properties();
-        InputStream is = Locator.class.getResourceAsStream("/creds.properties");
+        InputStream is = Creds.class.getResourceAsStream("/creds.properties");
         try {
             creds.load(is);
         } catch (Exception e) {
